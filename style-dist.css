@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  padding: 0px 30px;
+  font-size: 12px;
+  align-items: center;
+}
+header .sram-icon {
+  width: 100px;
+}
+header nav a {
+  cursor: pointer;
+}
+header nav a:not(:last-child):after {
+  content: "|";
+  margin: 0px 10px;
+}
+header nav img.user-icon {
+  width: 20px;
+  margin-bottom: -5px;
+}
+header .latest-news {
+  font-weight: bold;
+}
+header .latest-news .italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.companies {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+  background-color: #f30134;
+  width: 100%;
+  position: relative;
+}
+.companies .logo {
+  height: 60px;
+  border-right: 1px solid #e60a30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+}
+.companies .logo .logo-icon {
+  width: 130px;
+  filter: brightness(0) invert(1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.companies .logo .logo-suff {
+  font-size: 18px;
+  margin-left: 10px;
+  color: white;
+  font-style: italic;
+}
+.companies .active {
+  background-color: #959595;
+}
+.companies .search-icon {
+  position: absolute;
+  width: 20px;
+  right: 30px;
+  top: calc(100% - 40px);
+}
+
+.additional-info {
+  min-height: 295px;
+  display: flex;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+.additional-info .menu-buttons {
+  margin-left: 33px;
+  font-size: 14px;
+  padding: 0;
+  list-style: none;
+  width: 18.5%;
+  height: 100%;
+}
+.additional-info .menu-buttons .menu-button {
+  margin: auto;
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  color: #738090;
+  border: 1px solid #738090;
+  margin-top: 2px;
+  text-align: center;
+  background-color: white;
+}
+.additional-info .menu-buttons .menu-button:first-child {
+  background-color: #738090;
+  color: white;
+}
+.additional-info .data {
+  width: 17.5%;
+  margin-left: 10px;
+}
+.additional-info .data .company-icon {
+  height: 24px;
+  margin-bottom: 10px;
+  display: block;
+}
+.additional-info .data .rate {
+  color: #f30134;
+  border: 1px solid #f30134;
+  font-size: 14px;
+  padding: 2px;
+}
+.additional-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #738090;
+}
+.additional-info ul li {
+  margin-top: 25px;
+}
+.additional-info .params {
+  width: 61%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+.additional-info .params .param {
+  width: 260px;
+  margin-right: 20px;
+}
+.additional-info .params .param .param-title {
+  color: black;
+  margin: 0;
+  height: 30px;
+}
+.additional-info .params .param .icons {
+  margin-top: 5px;
+}
+.additional-info .params .param .icons .icon {
+  background-color: #aafb87;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+  margin-right: 2px;
+}
+.additional-info .params .param .icons .icon-1 {
+  background-color: white;
+  border: 1px solid #738090;
+  color: #738090;
+}
+.additional-info .params .param .icons .icon-2 {
+  background-color: #27900e;
+  color: white;
+}
+.additional-info .params .param .icons .icon-2 .check {
+  width: 8px;
+}
+.additional-info .params .param .icons .icon-3 {
+  color: white;
+  background-color: #f30134;
+}
+.additional-info .params .param .param-descr {
+  margin: 0;
+  margin-top: 5px;
+  color: #959595;
+}
+
+.preview {
+  background-color: royalblue;
+  height: 600px;
+  width: 100%;
+  background-image: url("./src/img/slide2.jpg");
+  background-size: cover;
+  position: relative;
+}
+.preview .water-sign {
+  position: absolute;
+  background-color: #f30134;
+  width: 350px;
+  height: 160px;
+  top: calc(100% - 320px);
+  opacity: 0.7;
+}
+.preview .water-sign img {
+  width: 200px;
+  filter: brightness(0) invert(1);
+  margin-top: 16.5%;
+  margin-left: 20px;
+}
